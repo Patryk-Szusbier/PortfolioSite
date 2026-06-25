@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +31,7 @@ function Navigation() {
         <div className="flex items-center justify-between">
           <a
             href="#home"
-            className="nav-logo text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
+            className="nav-logo text-2xl font-bold bg-linear-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
           >
             {"<Dev/>"}
           </a>
@@ -45,7 +45,7 @@ function Navigation() {
                 className="nav-link text-gray-300 hover:text-white transition-colors relative group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-600 group-hover:w-full transition-all duration-300" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-blue-400 to-purple-600 group-hover:w-full transition-all duration-300" />
               </a>
             ))}
           </div>
